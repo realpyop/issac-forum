@@ -13,7 +13,7 @@ const Layout = () => {
 
                 </div>
                 <div className='navigation-buttons'>
-                    <Link to="/home"><button className="header-button"> Home </button></Link>
+                    <Link to="/"><button className="header-button"> Home </button></Link>
                     <Link to="/create-post"><button className="create-button"> Create New Post </button></Link>
                 </div>
             </div>
