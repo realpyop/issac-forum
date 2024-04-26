@@ -44,7 +44,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: absolute;
   padding-left: 1rem;
   padding-right: 1rem;
   top: 0;
@@ -52,6 +52,7 @@ body {
   right: 0;
   background-color: transparent;
   flex-wrap: nowrap;
+  margin-bottom: 20px;
 }
 
 .header-elements a {
@@ -79,20 +80,133 @@ body {
 }
 
 .create-button {
-  background-color: #734B3D;
+  background-color: #37261e;
   transition: 0.3s ease;
 }
 
 .create-button:hover {
-  background-color: #583A2F;
+  background-color: #553a2f;
   outline: none;
 }
 
-.create-button:focus {
-  outline: none;
-}
+
 
 .logo {
   width: 4.5rem;
   height: auto;
+}
+
+.question-form {
+  background-color: #37261e;
+  width: 35rem;
+  height: 41rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form-field {
+  position: relative;
+}
+
+.input-question {
+  width: 30rem;
+  margin-bottom: 1rem;
+  resize: none;
+  background-color: transparent;
+  border: 2px solid #9f6855;
+  padding: 10px;
+  border-radius: 0.4rem;
+}
+
+.input-content {
+  width: 30rem;
+  height: 20rem;
+  margin-bottom: 1rem;
+  resize: none;
+  background-color: transparent;
+  border: 2px solid #9f6855;
+  padding: 10px;
+  border-radius: 0.4rem;
+}
+
+.input-imageURL {
+  width: 30rem;
+  margin-bottom: 1rem;
+  resize: none;
+  background-color: transparent;
+  border: 2px solid #9f6855;
+  padding: 10px;
+  border-radius: 0.4rem;
+}
+
+.submit-button {
+  background-color: #583a2f;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  border-radius: 0.5rem;
+}
+
+.submit-button:hover {
+  background-color: #744d3f;
+  cursor: pointer;
+}
+
+.question-invalid {
+  border: 2px solid rgb(201, 77, 77);
+}
+
+.post-container {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #37261e;
+  border-radius: 1rem;
+}
+
+.forum {
+  margin-top: 8rem;
+}
+
+.card {
+  width: 50rem;
+  padding: 10px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.time-created {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card-detail {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.question {
+  margin-top: 0.5rem;
+  color: white;
+}
+
+.post-detail-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #37261e;
+  border-radius: 1rem;
+  margin-top: 8rem;
 }
