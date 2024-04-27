@@ -12,7 +12,7 @@ const App = () => {
       const { data } = await supabase
         .from("forum")
         .select()
-        .order("created_at", { ascending: true })
+        .order("created_at", { ascending: false })
 
       setPost(data);
     }
